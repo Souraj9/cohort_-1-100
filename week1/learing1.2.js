@@ -25,8 +25,13 @@ function cont1000() {
 }
 cont1000();
 
-function sumOfTwoNumbers(num1,num2){
-return console.log(`Sum is : ${num1 + num2}`);
+function sumOfTwoNumbers(num1,num2, calback){
+ let sum = num1 + num2;
+ calback(sum);
 }
 
-sumOfTwoNumbers(13,17);
+function sumData(data) {
+    return console.log(`Sum is : ${data}`);
+}
+
+sumOfTwoNumbers(13,17,sumData);
