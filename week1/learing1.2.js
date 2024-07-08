@@ -51,3 +51,5 @@ if(countnumber<=0){
 },1000)
 }
 timer(5)
+
+console.log("learning");
