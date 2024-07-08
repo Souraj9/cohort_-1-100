@@ -35,3 +35,19 @@ function sumData(data) {
 }
 
 sumOfTwoNumbers(13,17,sumData);
+
+
+function timer(count){
+    let countnumber = parseInt(count);
+
+const setTime = setInterval(()=>{
+    countnumber--;
+const  actualTime = countnumber < 10 ? `0${countnumber}` : countnumber;
+console.log(actualTime);
+if(countnumber<=0){
+    clearTimeout(setTime);
+}
+
+},1000)
+}
+timer(5)
