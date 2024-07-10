@@ -50,6 +50,12 @@ if(countnumber<=0){
 
 },1000)
 }
-timer(5)
+// timer(5)
 
-console.log("learning");
+const ar1 =[1,2,3,4];
+const ar2 =[5,6,7,8,9,10];
+let arr3 = ar1.concat(ar2);
+console.log(arr3);
+const short = ar1.forEach(function(a){
+    console.log("vales", a);
+})
